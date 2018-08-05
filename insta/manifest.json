@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Insta",
+    "version": "1.0",
+    "description": "Insta",
+    "page_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.instagram.com/explore/*",
+          "http://www.instagram.com/explore/*"
+        ],
+        "js": [
+          "content_script.js"
+        ]
+      }
+    ],
+
+    "permissions" : [
+        "tabs",
+        "http://*/*"
+            ]
+}
